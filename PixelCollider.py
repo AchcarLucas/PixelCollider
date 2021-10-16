@@ -114,7 +114,7 @@ class Game():
 
 
         # normalização do vetor direção
-        if(self.player.dir_x != 0 and self.player.dir_y != 0):
+        if(self.player.dir_x != 0 or self.player.dir_y != 0):
             tmp_normal = math.sqrt(math.pow(self.player.dir_x, 2) + math.pow(self.player.dir_y, 2))
 
             self.player.dir_x = self.player.dir_x / tmp_normal
